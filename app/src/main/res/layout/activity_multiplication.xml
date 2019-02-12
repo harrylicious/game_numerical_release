@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="id.haqiqi_studio.gamenumeric.GamePlay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <include
+                layout="@layout/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+        </android.support.design.widget.AppBarLayout>
+
+
+        <ScrollView
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:animateLayoutChanges="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:animateLayoutChanges="true"
+                android:animationCache="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+        <include layout="@layout/footer_multiplication"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"/>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/panel"
+        android:visibility="invisible"
+        android:background="@drawable/layer_panel"
+        android:layout_centerInParent="true"
+        android:layout_margin="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Istirahat Sejenak"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp"
+            android:layout_margin="5dp"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/jeda"
+            android:text="5 detik"
+            android:textStyle="bold"
+            android:textSize="65dp"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

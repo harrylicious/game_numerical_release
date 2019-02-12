@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="id.haqiqi_studio.gamenumeric.GamePlay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <include
+                layout="@layout/toolbar_manual"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+        </android.support.design.widget.AppBarLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:animationCache="true"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <Button
+                    android:text="PERKENALAN"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="18dp"
+                    android:background="@drawable/layer_btn_orange"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+                   <TextView
+                       android:fontFamily="@font/roboto_regular"
+                       android:text="Game ini menuntut kita untuk menyelesaikan persoalan matematika yaitu persoalan aritmatika \n"
+                       android:textColor="@color/white"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />
+                   <TextView
+                       android:fontFamily="@font/roboto_regular"
+                       android:text="Terdapat 5 level dalam soal ini dan di setiap level memiliki tantangan dan kecepatan yang berbeda. Wiuw. \n"
+                       android:textColor="@color/white"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />
+                   <TextView
+                       android:fontFamily="@font/roboto_regular"
+                       android:text="Waktu maksimal untuk mengerjakan soal penjumlahan adalah 5 menit (300 detik) dan setiap level pada soal memiliki waktu pengerjaan maksimal 1/2 menit (30 detik). Waah.\n"
+                       android:textColor="@color/white"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />
+                   <TextView
+                       android:fontFamily="@font/roboto_regular"
+                       android:text="Bila waktu habis maka soal akan di tutup dan score terakhir akan di simpan dengan kalkulasi score : jawaban benar - jawaban salah."
+                       android:textColor="@color/white"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />
+               </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <include
+            layout="@layout/footer_manual"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

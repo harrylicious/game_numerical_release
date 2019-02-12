@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D1E30"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="id.haqiqi_studio.gamenumeric.GamePlay">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#2D2D4B" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/label_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="00:00"
+            android:textColor="@color/orange"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/label_benar"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="BENAR"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/benar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/label_benar"
+            android:background="@drawable/point_benar"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/label_salah"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="SALAH"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/salah"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/label_salah"
+            android:background="@drawable/point_salah"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

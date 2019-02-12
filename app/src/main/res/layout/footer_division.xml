@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D1E30"
+    android:padding="3dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="id.haqiqi_studio.gamenumeric.GamePlay">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentTop="true"
+        android:background="#2D2D4B" />
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/step1"
+            android:background="@drawable/circle_btn_red"
+            android:layout_margin="2dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_regular"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/step2"
+            android:layout_toRightOf="@id/step1"
+            android:layout_margin="2dp"
+            android:background="@drawable/circle_btn_default"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_regular"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/step3"
+            android:layout_toRightOf="@id/step2"
+            android:layout_margin="2dp"
+            android:background="@drawable/circle_btn_default"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_regular"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/step4"
+            android:layout_toRightOf="@id/step3"
+            android:layout_margin="2dp"
+            android:background="@drawable/circle_btn_default"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_regular"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/step5"
+            android:layout_toRightOf="@id/step4"
+            android:layout_margin="2dp"
+            android:background="@drawable/circle_btn_default"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_regular"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_toRightOf="@id/btnAddition"
+            android:layout_alignTop="@id/btnAlleviation"
+            style="?android:attr/progressBarStyle"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar3"
+            android:layout_alignTop="@id/btnDivision"
+            android:layout_toRightOf="@id/btnMultiplication"
+            style="?android:attr/progressBarStyle"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/congrat"
+            android:background="@drawable/layer_btn_black"
+            android:visibility="invisible"
+            android:layout_margin="2dp"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Yee. Selesai. (Kembali)"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

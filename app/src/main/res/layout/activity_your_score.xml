@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradasi_bg_primary"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YourScore">
+
+  <LinearLayout
+      android:layout_centerInParent="true"
+      android:layout_width="250dp"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="vertical">
+      <TextView
+          android:text="Score Anda:"
+          android:padding="5dp"
+          android:textColor="@color/gray"
+          android:textSize="22dp"
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+      <TextView
+          android:id="@+id/your_score"
+          android:text="200"
+          android:background="@drawable/layer_btn_green"
+          android:padding="30dp"
+          android:textSize="38dp"
+          android:textStyle="bold"
+          android:textColor="@color/gray"
+          android:layout_centerInParent="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+  </LinearLayout>
+
+</RelativeLayout>

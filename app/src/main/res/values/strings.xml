@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Game Numerical</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="format">%1d + %2d = %3d</string>
+    <string name="score">Score : </string>
+    <string name="scoreValue">%1d</string>
+
+    <string-array name="data">
+        <item>Data 1</item>
+        <item>Data 2</item>
+        <item>Data 3</item>
+        <item>Data 4</item>
+        <item>Data 5</item>
+    </string-array>
+    <string name="title_activity_bonus">BonusActivity</string>
+    <string name="title_activity_choose_quiz">ChooseQuiz</string>
+    <string name="title_activity_manual">Manual</string>
+
+    <string name="penjumlahan">
+        "<b>Selesaikan soal penjumlahan</b>\n"
+        "Level ini menuntut kita untuk menyelesaikan persoalan matematika yaitu Penjumlahan \n"
+        "<b>Selesaikan soal penjumlahan</b>\n"
+        "<b>Selesaikan soal penjumlahan</b>\n"
+        "<b>Selesaikan soal penjumlahan</b>\n"
+        "<b>Selesaikan soal penjumlahan</b>\n"
+    </string>
+
+</resources>

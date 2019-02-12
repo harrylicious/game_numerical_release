@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.haqiqi_studio.gamenumeric">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Main"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GamePlay" />
+        <activity android:name=".PlayActivity" />
+        <activity android:name=".ListLevel" />
+        <activity
+            android:name=".Bonus"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SplashScreen" />
+        <activity android:name=".YourScore" />
+        <activity
+            android:name=".Category.Addition"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChooseQuiz"
+            android:label="@string/title_activity_choose_quiz"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Category.Allevation" />
+        <activity android:name=".Category.Multiplication" />
+        <activity android:name=".Category.Division" />
+        <activity
+            android:name=".Manual"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Statistik"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Profil"></activity>
+    </application>
+
+</manifest>
